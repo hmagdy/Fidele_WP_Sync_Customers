@@ -17,8 +17,8 @@
  * Plugin URI:        https://fidele.vip/
  * Description:       Fidele plugin to sync customers
  * Version:           1.0.0
- * Author:            proCrew
- * Author URI:        http://www.procrew.com/
+ * Author:            Fidele
+ * Author URI:        https://fidele.vip/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       fidele-sync-customers
