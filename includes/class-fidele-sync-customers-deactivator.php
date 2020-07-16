@@ -3,7 +3,7 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       test@test.com
+ * @link       
  * @since      1.0.0
  *
  * @package    Fidele_Sync_Customers

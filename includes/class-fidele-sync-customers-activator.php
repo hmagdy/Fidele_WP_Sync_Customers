@@ -4,7 +4,7 @@ require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 /**
  * Fired during plugin activation
  *
- * @link       test@test.com
+ * @link       
  * @since      1.0.0
  *
  * @package    Fidele_Sync_Customers

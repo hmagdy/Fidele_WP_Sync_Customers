@@ -6,7 +6,7 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       test@test.com
+ * @link       
  * @since      1.0.0
  *
  * @package    Fidele_Sync_Customers
