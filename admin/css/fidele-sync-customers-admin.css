@@ -2,3 +2,74 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+#wpcontent, #wpwrap {
+    background: #f1f1f1;
+}
+
+.alert {
+    margin-top: 1rem;
+    margin-right: 15px;
+}
+
+h1.wp-heading-inline {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+    padding: 9px 0 4px 0;
+    line-height: 1.3;
+}
+
+.fidele_cont {
+    margin-top: 10px;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.page-title-action {
+    padding: 4px 8px;
+    position: relative;
+    top: -3px;
+    text-decoration: none;
+    border: 1px solid #0071a1;
+    border-radius: 2px;
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: normal;
+    color: #0071a1;
+    background: #f3f5f6;
+    cursor: pointer;
+}
+
+.page-title-action:hover {
+    background: #f1f1f1;
+    border-color: #016087;
+    color: #016087;
+}
+
+.page-title-action:focus {
+    border-color: #007cba;
+    box-shadow: 0 0 0 1px #007cba;
+    outline: 2px solid transparent;
+}
+
+#settings {
+    margin-top: 15px;
+}
+
+#settings input {
+    width: 25em;
+    max-width: 100%;
+    height: 30px;
+}
+
+#settings label {
+    font-weight: 300;
+    font-size: 1em;
+    color: #23282d;
+    text-shadow: none;
+}
+
+.form-group .row {
+    padding: 15px 10px;
+}

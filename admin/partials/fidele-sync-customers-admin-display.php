@@ -29,30 +29,55 @@ $email = $credentials['email'] ?? '';
 $password = $credentials['password'] ?? '';
 ?>
 
-<div class="container">
-    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#settings">Settings</button>
+<div class="container fidele_cont">
+    <h1 class="wp-heading-inline">Fidele Sync Customers
+        <button type="button" class="page-title-action" data-toggle="collapse" data-target="#settings">
+            Settings
+        </button>
+    </h1>
 
     <div id="settings" class="collapse <?php if (empty($credentials)) echo "show"; ?>">
-        <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST">
+        <p style="color: #444;">Enter your Fidele account credentials to connect it to your woocommerce website.</p>
+        <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="POST">
+
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" value="<?php echo $email ?>" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter Email" required>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="email" value="<?php echo $email ?>" class="form-control" name="email" id="email"
+                               aria-describedby="emailHelp" placeholder="Enter Email" required>
+                    </div>
+                </div>
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" value="<?php echo $password ?>" class="form-control" name="password" id="password" placeholder="Password" required>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="password" value="<?php echo $password ?>" class="form-control" name="password"
+                               id="password" placeholder="Password" required>
+                    </div>
+                </div>
             </div>
 
-            <input type="hidden" name="nds_add_user_meta_nonce" value="<?php echo $nds_add_meta_nonce ?>" />
-
+            <input type="hidden" name="nds_add_user_meta_nonce" value="<?php echo $nds_add_meta_nonce ?>"/>
             <input name='action' type="hidden" value='save_settings_action'>
-            <button type="submit" class="btn btn-primary">Save</button>
-        </form>
+
+            <div class="col-md-2 col-xs-12">
+                <button type="submit" class="button-primary woocommerce-save-button">Save Settings</button>
+            </div>
     </div>
-    <hr/ >
-    <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST">
-        <input type="hidden" name="nds_add_user_meta_nonce" value="<?php echo $nds_add_meta_nonce ?>" />
-        <input name='action' type="hidden" value='sync_customers_action'>
-        <button type="submit" name="sync" class="btn btn-primary">Sync customers</button>
+
     </form>
+    <hr/>
+
+    <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="POST">
+        <input type="hidden" name="nds_add_user_meta_nonce" value="<?php echo $nds_add_meta_nonce ?>"/>
+        <input name='action' type="hidden" value='sync_customers_action'>
+        <button type="submit" name="sync" class="btn btn-success btn-sm float-right">Sync Customers</button>
+    </form>
+
 </div>
